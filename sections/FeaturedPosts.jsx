@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FeaturedPostCard } from "../Components";
+import { FeaturedPostCard } from "../components";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 

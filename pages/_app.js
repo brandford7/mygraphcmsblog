@@ -1,7 +1,7 @@
 import { Box, ChakraProvider } from "@chakra-ui/react";
 import '../styles/globals.scss';
 import React, { useState, useEffect } from "react";
-import {Layout} from "../Components"
+import {Layout} from "../components"
 
 
 function MyApp({ Component, pageProps }) {

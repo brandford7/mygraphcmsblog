@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import { Box, Container, Grid, GridItem } from "@chakra-ui/react";
-import { Categories, LoaderBar, PostCard } from "../../Components";
+import { Categories, LoaderBar, PostCard } from "../../components";
 import { getCategories, getCategoryPost } from "../../Services";
 
 const CategoryPost = ({posts}) => {
