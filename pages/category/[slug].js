@@ -12,7 +12,7 @@ const CategoryPost = ({posts}) => {
 
   return (
     <>
-      <Container maxW="container.xl" mx="aut0" px="10" mb="8">
+      <Container maxW="container.xl" mx="auto" px="10" mb="8">
         <Grid
           templateColumns={[
             "repeat(1, 1fr)",
