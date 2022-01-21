@@ -7,7 +7,7 @@ import {
   Author,
   Comments,
   CommentsForm,LoaderBar
-} from "../../components";
+} from "../../Components";
 import { Box, Container, Grid, GridItem } from "@chakra-ui/react";
 import { useRouter } from 'next/router'
 import { AdjacentPosts } from "../../sections";

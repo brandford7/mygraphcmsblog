@@ -1,7 +1,7 @@
 import { Box, Container, Flex, Grid, GridItem } from "@chakra-ui/react";
 import Head from "next/head";
 
-import { PostWidget, PostCard, Categories, FeaturedPostCard, } from "../components";
+import { PostWidget, PostCard, Categories, FeaturedPostCard, } from "../Components";
 
 import { fetchPosts } from "../Services";
 

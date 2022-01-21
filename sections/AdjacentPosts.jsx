@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { AdjacentPostCard } from "../components";
+import { AdjacentPostCard } from "../Components";
 
 import { getAdjacentPosts } from "../Services";
 
