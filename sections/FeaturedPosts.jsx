@@ -4,7 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import { getFeaturedPosts } from "../Services";
-import { Box, chakra, Stack } from "@chakra-ui/react";
+import { Box, chakra, } from "@chakra-ui/react";
 
 const responsive = {
   superLargeDesktop: {
