@@ -10,7 +10,8 @@ import {
 } from "../../components";
 import { Box, Container, Grid, GridItem } from "@chakra-ui/react";
 import { useRouter } from 'next/router'
-import AdjacentPosts from "../../sections/AdjacentPosts";
+import { AdjacentPosts } from "../../sections";
+
 
 
 const PostDetails = ({ post }) => {
