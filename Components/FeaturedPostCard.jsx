@@ -7,7 +7,7 @@ import { Box, chakra, Text } from "@chakra-ui/react";
 const FeaturedPostCard = ({ post }) => {
   return (
     <>
-      <Box pos="relative" h="72" mr='50'>
+      <Box pos="relative" h="72" mr={["","","10"]}>
         <Box
           pos="absolute"
           rounded="lg"
