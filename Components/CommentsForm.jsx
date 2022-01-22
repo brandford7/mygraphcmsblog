@@ -150,7 +150,7 @@ const CommentsForm = ({ slug }) => {
               mt="3"
               fontWeight="semibold"
               float="right"
-              fontSize="xl"
+              fontSize={["md", "md", "xl"]}
               color="green.500"
             >
               Comment submiited for review
