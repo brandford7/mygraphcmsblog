@@ -4,7 +4,7 @@ import { Box, Container, Grid, GridItem } from "@chakra-ui/react";
 import { Categories, LoaderBar, PostCard } from "../../Components";
 import { getCategories, getCategoryPost } from "../../Services";
 
-const CategoryPost = ({posts}) => {
+const CategoryPost = ({ posts }) => {
   const router = useRouter();
   if (router.isFallback) {
     return <LoaderBar />;
@@ -44,9 +44,9 @@ export async function getStaticProps({ params }) {
 
   return {
     props: { posts },
+    revalidate: 60,
   };
 }
-
 
 // Specify dynamic routes to pre-render pages based on data.
 // The HTML is generated at build time and will be reused on each request.
