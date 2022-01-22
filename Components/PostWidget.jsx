@@ -17,7 +17,7 @@ const PostWidget = ({ categories, slug }) => {
         setRelatedPosts(result)
       );
     }
-  }, [slug]);
+  }, [slug,categories]);
 
   console.log(relatedPosts);
 
@@ -48,6 +48,7 @@ const PostWidget = ({ categories, slug }) => {
                 verticalAlign="middle"
                 h="60px"
                 w="60px"
+                cursor="pointer"
               />
             </Box>
             <Box flexGrow="1" ml="4">

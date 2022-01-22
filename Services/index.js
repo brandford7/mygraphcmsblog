@@ -7,6 +7,7 @@ export const fetchPosts = async () => {
     query MyQuery {
       postsConnection {
         edges {
+          cursor
           node {
             author {
               bio
