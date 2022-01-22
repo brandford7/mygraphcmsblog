@@ -25,7 +25,7 @@ const PostCard = ({ post }) => {
             h="80"
             shadow="lg"
             roundedTop="lg"
-            rounded={["", "md", "lg"]}
+            rounded={["md", "md", "lg"]}
           />
         </Box>
         <Heading
