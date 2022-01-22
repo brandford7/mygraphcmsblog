@@ -1,11 +1,12 @@
 import React from "react";
 import moment from "moment";
 import Link from "next/link";
+import { Box } from "@chakra-ui/react";
 
 const AdjacentPostCard = ({ post, position }) => (
   <>
-    <div
-      className="absolute rounded-lg bg-center bg-no-repeat bg-cover shadow-md inline-block w-full h-72 mb-8"
+    <Box
+      pos="absolute" rounded="lg" bgPosition="center" bgRepeat="no-repeat" bgSize="cover" shadow="md" display="inline-block" w="full" h="72" mb="8"
       style={{ backgroundImage: `url('${post.featuredImage.url}')` }}
     />
     <div className="absolute rounded-lg bg-center bg-gradient-to-b opacity-50 from-gray-400 via-gray-700 to-black w-full h-72" />
