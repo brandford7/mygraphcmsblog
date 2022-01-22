@@ -22,7 +22,7 @@ const Comments = ({ slug }) => {
             borderBottom="1px"
             pb="4"
           >
-            {comments.length} {comments.length > 0 ? "Comments" : "Comment"}
+            {comments.length} {comments.length > 1 ? "Comments" : "Comment"}
           </chakra.h3>
           {comments.map((comment) => (
             <Box

@@ -14,6 +14,7 @@ import { AdjacentPosts } from "../../sections";
 
 
 
+
 const PostDetails = ({ post }) => {
 const router= useRouter()
 
