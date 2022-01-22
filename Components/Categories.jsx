@@ -28,6 +28,7 @@ const Categories = () => {
               pb="3"
               mb="3"
               cursor="pointer"
+              borderBottom="1px solid black"
             >{category.name}</chakra.span>
           </Link>
         ))}
