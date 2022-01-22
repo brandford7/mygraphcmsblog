@@ -4,6 +4,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    extend: {
+      spacing: {
+        "2/3": "66.666667%",
+      },
+    },
+  },
+  variants: {
     extend: {},
   },
   plugins: [],
