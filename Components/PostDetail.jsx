@@ -20,46 +20,45 @@ const PostDetail = ({ post }) => {
         modifiedText = <u key={index}>{text}</u>;
       }
     }
-
-    switch (type) {
-      case "heading-three":
-        return (
-          <chakra.h3 key={index} fontSize="xl" fontWeight="semibold" mb="4">
-            {modifiedText.map((item, i) => (
-              <React.Fragment key={i}>{item}</React.Fragment>
-            ))}
-          </chakra.h3>
-        );
-      case "paragraph":
-        return (
-          <Text key={index} mb="8">
-            {modifiedText.map((item, i) => (
-              <React.Fragment key={i}>{item}</React.Fragment>
-            ))}
-          </Text>
-        );
-      case "heading-four":
-        return (
-          <chakra.h4 key={index} fontSize="md" fontWeight="semibold" mb="4">
-            {modifiedText.map((item, i) => (
-              <React.Fragment key={i}>{item}</React.Fragment>
-            ))}
-          </chakra.h4>
-        );
-      case "image":
-        return (
-          <Img
-            key={index}
-            src={obj.src}
-            alt={obj.title}
-            h={obj.height}
-            w={obj.width}
-          />
-        );
-      default:
-        return modifiedText;
-    }
-  };
+ switch (type) {
+   case "heading-three":
+     return (
+       <h3 key={index} className="text-xl font-semibold mb-4">
+         {modifiedText.map((item, i) => (
+           <React.Fragment key={i}>{item}</React.Fragment>
+         ))}
+       </h3>
+     );
+   case "paragraph":
+     return (
+       <p key={index} className="mb-8">
+         {modifiedText.map((item, i) => (
+           <React.Fragment key={i}>{item}</React.Fragment>
+         ))}
+       </p>
+     );
+   case "heading-four":
+     return (
+       <h4 key={index} className="text-md font-semibold mb-4">
+         {modifiedText.map((item, i) => (
+           <React.Fragment key={i}>{item}</React.Fragment>
+         ))}
+       </h4>
+     );
+   case "image":
+     return (
+       <img
+         key={index}
+         alt={obj.title}
+         height={obj.height}
+         width={obj.width}
+         src={obj.src}
+       />
+     );
+   default:
+     return modifiedText;
+ }
+     };
 
   return (
     <>
