@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 import moment from "moment";
 import { Box, chakra, Img, Text } from "@chakra-ui/react";
 
@@ -93,7 +93,7 @@ const PostDetail = ({ post }) => {
               w={{ lg: "auto" }}
               mr="8"
             >
-              <Image
+              <img
                 alt={post.author.name}
                 height="30px"
                 width="30px"
