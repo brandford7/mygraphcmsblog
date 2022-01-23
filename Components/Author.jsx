@@ -23,7 +23,7 @@ const Author = ({ author }) => {
             alt={author.name}
             height="100px"
             width="100px"
-            className="align-middle round-full"
+            className="align-middle rounded-full"
           />
         </Box>
         <chakra.h3 color="white" my="4" fontSize="xl" fontWeight="bold">
