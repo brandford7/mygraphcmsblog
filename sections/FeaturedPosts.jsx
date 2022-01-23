@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { FeaturedPostCard } from "../Components";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import { getFeaturedPosts } from "../Services";
-import { Box, chakra, } from "@chakra-ui/react";
+import { FeaturedPostCard } from "../components";
+import { getFeaturedPosts } from "../services";
 
 const responsive = {
   superLargeDesktop: {
@@ -37,21 +36,10 @@ const FeaturedPosts = () => {
   }, []);
 
   const customLeftArrow = (
-    <Box
-      pos="absolute"
-      _className="arrow-btn"
-      left="0"
-      textAlign="center"
-      py="3"
-      cursor="pointer"
-      bg="pink.600"
-      rounded="full"
-    >
-      <chakra.svg
+    <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-pink-600 rounded-full">
+      <svg
         xmlns="http://www.w3.org/2000/svg"
-        h="6"
-        w="6"
-        color="white"
+        className="h-6 w-6 text-white w-full"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -62,26 +50,15 @@ const FeaturedPosts = () => {
           strokeWidth="2"
           d="M10 19l-7-7m0 0l7-7m-7 7h18"
         />
-      </chakra.svg>
-    </Box>
+      </svg>
+    </div>
   );
 
   const customRightArrow = (
-    <Box
-      pos="absolute"
-      _className="arrow-btn"
-      right="0"
-      textAlign="center"
-      py="3"
-      cursor="pointer"
-      bg="pink.600"
-      rounded="full"
-    >
-      <chakra.svg
+    <div className="absolute arrow-btn right-0 text-center py-3 cursor-pointer bg-pink-600 rounded-full">
+      <svg
         xmlns="http://www.w3.org/2000/svg"
-        h="6"
-        w="6"
-        color="white"
+        className="h-6 w-6 text-white w-full"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -92,25 +69,25 @@ const FeaturedPosts = () => {
           strokeWidth="2"
           d="M14 5l7 7m0 0l-7 7m7-7H3"
         />
-      </chakra.svg>
-    </Box>
+      </svg>
+    </div>
   );
 
   return (
-    <Box mb="8"  >
+    <div className="mb-8">
       <Carousel
         infinite
         customLeftArrow={customLeftArrow}
         customRightArrow={customRightArrow}
         responsive={responsive}
-        itemClass="px-4 "
+        itemClass="px-4"
       >
         {dataLoaded &&
           featuredPosts.map((post, index) => (
             <FeaturedPostCard key={index} post={post} />
           ))}
       </Carousel>
-    </Box>
+    </div>
   );
 };
 
