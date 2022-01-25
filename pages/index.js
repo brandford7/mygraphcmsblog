@@ -1,7 +1,7 @@
 import { Box, Container, Flex, Grid, GridItem } from "@chakra-ui/react";
 import Head from "next/head";
 
-import { PostWidget, PostCard, Categories,  } from "../Components";
+import { PostWidget, PostCard, Categories } from "../Components";
 import { FeaturedPosts } from "../sections";
 
 import { fetchPosts } from "../Services";
@@ -43,6 +43,5 @@ export async function getStaticProps() {
 
   return {
     props: { posts },
-    revalidate : 60
   };
 }
