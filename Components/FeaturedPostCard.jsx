@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const FeaturedPostCard = ({ post }) => (
-  <div className="relative h-72 mr-10">
+  <div className="relative h-72 mr-10 sm:mr-0">
     <div
       className="absolute rounded-lg bg-center bg-no-repeat bg-cover shadow-md inline-block w-full h-72"
       style={{ backgroundImage: `url('${post.featuredImage.url}')` }}
